@@ -1,0 +1,83 @@
+<ion-content padding center text-center id="welcome">
+	
+	<ion-grid>
+		<ion-row>
+			<ion-col id="displayNumber">	
+				<div [innerHtml]="htmlVariable" ></div>	
+			</ion-col>	
+		</ion-row>
+		<ion-row>
+			
+			<ion-col col-3>	
+				<button ion-button color="lightprimary" (click)="clearNum()" large>C</button>
+			</ion-col>
+			<ion-col col-3>	
+				<button ion-button color="lightprimary" (click)="addDigits(0)" large>+/-</button>
+			</ion-col>
+			<ion-col col-3>	
+				<button ion-button color="lightprimary" (click)="equalto()" large>%</button>
+			</ion-col>
+			<ion-col col-3>	
+				<button ion-button color="success" (click)="operate('/')" large>/</button>
+			</ion-col>
+			
+		</ion-row>
+		<ion-row>
+			<ion-col col-3>	
+				<button ion-button color="lightprimary" (click)="addDigits(7)" large>7</button>
+			</ion-col>
+			<ion-col col-3>	
+				<button ion-button color="lightprimary" (click)="addDigits(8)" large>8</button>
+			</ion-col>
+			<ion-col col-3>	
+				<button ion-button color="lightprimary" (click)="addDigits(9)" large>9</button>
+			</ion-col>
+			<ion-col col-3>	
+				<button ion-button color="success" (click)="operate('*')" large>*</button>
+			</ion-col>
+			
+		</ion-row>
+		<ion-row>
+			<ion-col col-3>	
+				<button ion-button color="lightprimary" (click)="addDigits(4)" large>4</button>
+				</ion-col>
+			<ion-col col-3>	
+				<button ion-button color="lightprimary" (click)="addDigits(5)" large>5</button>
+			</ion-col>
+			<ion-col col-3>	
+				<button ion-button color="lightprimary" (click)="addDigits(6)" large>6</button>
+			</ion-col>
+			<ion-col col-3>	
+				<button ion-button color="success" (click)="operate('-')" large>-</button>
+			</ion-col>
+			
+		</ion-row>
+		<ion-row>
+			<ion-col col-3>	
+				<button ion-button color="lightprimary" (click)="addDigits(1)" large>1</button>
+			</ion-col>
+			<ion-col col-3>	
+				<button ion-button color="lightprimary" (click)="addDigits(2)" large>2</button>
+			</ion-col>
+			<ion-col col-3>	
+				<button ion-button color="lightprimary" (click)="addDigits(3)" large>3</button>
+			</ion-col>
+			<ion-col col-3>	
+				<button ion-button color="success" (click)="operate('+')" large>+</button>
+			</ion-col>
+		</ion-row>
+		
+		<ion-row>
+			<ion-col col-6>	
+				<button ion-button color="lightprimary" (click)="addDigits(0)" large>0</button>
+			</ion-col>
+			
+			<ion-col col-3>	
+				<button ion-button color="lightprimary" (click)="operate('/')" large>.</button>
+			</ion-col>
+			<ion-col col-3>	
+				<button ion-button color="success" (click)="equalto()" large>=</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>
