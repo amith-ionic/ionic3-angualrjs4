@@ -1,0 +1,12 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Home</ion-title>
+		<ion-buttons end><button ion-button color="primary" (click)="logout()">Logout</button></ion-buttons>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding center text-center class="background">
+  <h2>Welcome </h2>
+  <h4><span [innerHtml]="htmlVariable" ></span></h4>
+ <!--  <button ion-button color="primary" (click)="logout()">Logout</button> -->
+</ion-content>

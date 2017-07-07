@@ -1,0 +1,19 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>QR Code</ion-title>
+		<ion-buttons end><button ion-button color="primary" (click)="logout()">Logout</button></ion-buttons>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding center text-center class="background">
+<!-- <button ion-button (click)="scan()">Scan ... </button>
+    <div *ngIf="scanData">
+        <p>Scanned Text : </p>
+        <p>Scanned Format : </p>
+
+    </div>
+	<ion-input type="text" [(ngModel)]="encodeData" ></ion-input>   --> 
+     <button ion-button (click)="encodeText()">Show QR Code</button>
+	 <div [innerHtml]="encodedData"></div>
+	
+</ion-content>
